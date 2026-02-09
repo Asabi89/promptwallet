@@ -1,0 +1,108 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: var(--color-white);
+  padding: 8px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-purple);
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-menu li a {
+  color: #000000;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-menu li a:hover {
+  background-color: rgba(154, 72, 208, 0.15);
+  color: var(--color-purple);
+}
+
+.navbar-menu li a.active {
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dark-mode-toggle {
+  background-color: transparent;
+  border: 2px solid var(--color-purple);
+  color: var(--color-purple);
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: rgba(154, 72, 208, 0.15);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Drag & Drop */
+.app-layout.dragging {
+  position: relative;
+}
+
+.drop-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(154, 72, 208, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.drop-message {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.drop-message svg {
+  margin-bottom: 20px;
+}
+
+.drop-message p {
+  font-size: 24px;
+  font-weight: 600;
+}

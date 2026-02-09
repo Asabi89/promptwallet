@@ -1,0 +1,191 @@
+.use-prompt-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.use-prompt-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.dark-mode .use-prompt-title {
+  color: #FFFFFF;
+}
+
+.personalization-section {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-lavender);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.dark-mode .personalization-section {
+  background-color: #2a2a2a;
+  border-color: var(--color-purple);
+}
+
+.personalization-section h3 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.dark-mode .personalization-section h3 {
+  color: #FFFFFF;
+}
+
+.personalization-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .personalization-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.personalization-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.personalization-field label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-lavender);
+}
+
+.personalization-field select {
+  padding: 12px;
+  border: 2px solid var(--color-lavender);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-white);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.personalization-field select:focus {
+  border-color: var(--color-purple);
+}
+
+.dark-mode .personalization-field select {
+  background-color: #3a3a3a;
+  color: var(--color-white);
+  border-color: var(--color-purple);
+}
+
+.dynamic-fields {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-lavender);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.dark-mode .dynamic-fields {
+  background-color: #2a2a2a;
+  border-color: var(--color-purple);
+}
+
+.dynamic-fields h3 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.dark-mode .dynamic-fields h3 {
+  color: #FFFFFF;
+}
+
+.dynamic-field {
+  margin-bottom: 15px;
+}
+
+.dynamic-field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-lavender);
+  text-transform: capitalize;
+}
+
+.dynamic-field input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--color-lavender);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.dark-mode .dynamic-field input {
+  background-color: #3a3a3a;
+  color: var(--color-white);
+  border-color: var(--color-purple);
+}
+
+.prompt-preview {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-lavender);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.dark-mode .prompt-preview {
+  background-color: #2a2a2a;
+  border-color: var(--color-purple);
+}
+
+.prompt-preview h3 {
+  color: #000000;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.dark-mode .prompt-preview h3 {
+  color: #FFFFFF;
+}
+
+.prompt-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Montserrat', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dark-mode .prompt-text {
+  background-color: #1a1a1a;
+}
+
+.btn-copy {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.btn-copy:hover {
+  background-color: #6ab842;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: var(--color-lavender);
+  font-size: 18px;
+}
